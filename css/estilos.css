@@ -16,33 +16,29 @@ body {
     box-sizing: border-box;
 }
 
-header {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    background-color: #333;
-    color: white;
+.mi_header {
     background-color: #C70039;
+    padding: 1rem;
 }
 
-header a {
-    text-decoration: none;
+.mi_header a {
+    margin-left: 5rem;
     color: #fff;
-    font-size: 1rem;
-    transition: all .5s;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
-nav a {
-    transition: .5s;
-}
-
-nav a:hover {
-    color: #C70039;
+.mi_header a:hover {
     background-color: #fff;
-    padding: 10px 20px;
-    border: 1px solid #900C3F;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #C70039;
 }
+
+.nav_noticia {
+    color: #C70039;
+} 
+
 
 .logo {
     text-decoration: none;
@@ -60,23 +56,6 @@ nav a:hover {
     border-radius: 50%;
     border: 2px solid #000;
 }
-
-nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav ul li a {
-    padding: 10px 20px;
-    transition: all .5s;
-}
-
-/* Main */
 
 main {
     display: grid;
@@ -184,6 +163,12 @@ aside a:hover {
 
 .contenido-sobre-nosotros {
     font-size: 24px;
+}
+
+.contenido-sobre-nosotros h3 {
+    font-size: 2.5rem;
+    color: #C70039;
+    margin: 0;
 }
 
 /* Contacto */
@@ -433,40 +418,6 @@ footer a {
 /* Media Queries */
 
 @media (max-width: 768px) {
-    header {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    nav ul li {
-        padding-bottom: 20px;
-    }
-
-    nav ul li a:hover {
-        padding-left: 20rem;
-        padding-right: 20rem;
-    }
-
-    .mi-header {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .mi-header nav ul li {
-        grid-template-columns: 1fr;
-        text-align: center;
-        margin: auto;
-    }
-    
-    .mi-header nav ul li a:hover {
-        padding-left: 20rem;
-        padding-right: 20rem;
-    }
-
-
-    .logo {
-        justify-content: center;
-    }
 
     main {
         grid-template-columns: 1fr;
@@ -481,17 +432,5 @@ footer a {
 
     aside a {
         margin-top: 10px;
-    }
-
-    nav {
-        margin-top: 10px;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav li {
-        margin: 5px 0;
     }
 }
